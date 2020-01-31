@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import img from './paris.jpg';
+import Data from './data.xml';
 
 function component() {
   const element = document.createElement('div');
@@ -14,8 +15,13 @@ function component() {
 
   element.appendChild(image);
 
+  console.log(Data);
+
   return element;
 }
+
+console.log(Data);
+
 console.log('New webpack')
 
 console.log('New webpack watch!');
