@@ -15,6 +15,18 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test:/\.(svg|png|jpe?g|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ],
   },
 };
